@@ -1,15 +1,32 @@
+/* color schema */
+:root {
+  --primary-color: #05260b;
+  --secondary-color: #9ac434;
+  --accent-color-1: #dee236;
+  --accent-color-2: #f5e5cc;
+  --accent-color-3: #fcfcf4;
+}
+
 * {
   padding: 0;
   margin: 0;
+  font-family: "TASA Orbiter", sans-serif;
 }
+
+h1,
+p {
+  color: var(--primary-color);
+}
+
 /*** header ***/
 header {
   display: grid;
   grid-template-columns: 24px auto 44px;
   padding: 5px 0 5px 10px;
   align-items: end;
-  border-bottom: solid 1px #ddd;
+  border-bottom: solid 1px var(--accent-color-2);
   column-gap: 8px;
+  background-color: var(--primary-color);
 }
 
 header img {
@@ -21,13 +38,14 @@ header img {
 
 header span {
   font-size: 1.2rem;
-  color: #588bc7;
+  color: var(--secondary-color);
 }
+
 /*** hamburger ***/
 .hamburger {
   background: none;
   border: none;
-  color: #588bc7;
+  color: var(--secondary-color);
   cursor: pointer;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -39,41 +57,87 @@ header span {
 .hamburger.show::before {
   content: "\00D7";
 }
+
 /*** Navigation ***/
 .navigation {
   display: none;
 }
+
 .navigation.show {
   display: block;
 }
+
 .navigation ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 .navigation a {
   display: block;
   padding: 0.5rem 12px;
-  color: #588bc7;
+  color: var(--primary-color);
   text-decoration: none;
   border-bottom: solid 1px #ddd;
 }
 
 .navigation a:hover {
-  background-color: #b6d5f8;
+  background-color: var(--secondary-color);
 }
 
 .navigation li.current {
   background-color: #eee;
 }
 
-main h1 {
-  margin-left: 10px;
-  color: #588bc7;
+/* Main Section */
+
+.main h1 {
+  margin: 1rem 1rem;
+  color: var(--primary-color);
 }
 
-footer {
-  background-color: #eee;
+.main section {
+  margin: 0 1rem 2rem 1rem;
+}
+
+.main section h2 {
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 0.4rem 0;
+}
+
+.courses__buttons button {
+  background: none;
+  border: none;
+  background-color: var(--secondary-color);
+  width: 100%;
+  padding: 0.5rem 0;
+  border-radius: 10px;
+}
+
+.courses__buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.courses__sections p {
+  background-color: var(--secondary-color);
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.courses p {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Footer Section */
+
+.footer {
+  background-color: var(--accent-color-2);
   padding: 1rem 10px;
   text-align: center;
 }

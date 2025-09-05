@@ -4,42 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
-    <meta name="description" content="Home page for my profile" />
-    <meta name="author" content="Manuel Zamalloa" />
-
+    <!-- Scripts -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/course.js" defer></script>
+
+    <!-- Meta Data -->
+    <meta name="description" content="Home page for my profile" />
+    <meta name="author" content="Manuel Zamalloa" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <img src="images/logo.svg" alt="site logo" width="40px" height="40px" />
-      <span>Foundation for Pets</span>
+      <span>Manuel Zamalloa</span>
       <button id="ham-btn" class="hamburger"></button>
     </header>
     <nav id="nav-bar" class="navigation">
       <ul>
-        <li class="current"><a href="#">Home</a></li>
+        <li class="current"><a href="/">Home</a></li>
         <li><a href="#">Chamber</a></li>
         <li><a href="#">Final Project</a></li>
       </ul>
     </nav>
-    <main>
+    <main class="main">
       <h1>Home</h1>
-      <section>
-        <h2></h2>
+      <section class="about-me">
+        <h2>About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+          consequatur commodi deleniti maxime esse deserunt. Dolorum, asperiores
+          exercitationem? Est iste, quisquam iure numquam aliquid illum libero
+          harum ad suscipit rem! In tempore, exercitationem modi vel, culpa
+          officiis inventore quo voluptatibus sit maxime cum fugiat suscipit
+          qui? Obcaecati quidem assumenda nam quaerat dolore eos ipsam, veniam
+          ex eligendi nemo sit velit tempora explicabo autem non, blanditiis
+          ipsa doloremque quasi omnis, itaque atque ab aut earum optio? Nam quia
+          neque totam consequuntur!
+        </p>
       </section>
-      <section>
-        <h2></h2>
+      <section class="student-photo">
+        <h2>Student Photo</h2>
+        <img src="#" alt="my photo" />
       </section>
-      <section>
-        <h2></h2>
+      <section class="courses">
+        <h2>Web Certificate Courses</h2>
+        <div class="courses__buttons">
+          <button>All</button>
+          <button>CSE</button>
+          <button>WDD</button>
+        </div>
+        <div class="courses__sections">
+          <p>WDD 130</p>
+          <p>WDD 131</p>
+          <p>WDD 231</p>
+        </div>
+        <p>The total credits for course listed above is 6</p>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="social">
         <a href="https://www.facebook.com/manuel.zamalloa.96" target="_blank"
           ><img src="images/facebook.svg" alt="facebook" width="16" height="16"
@@ -50,12 +85,12 @@
         <a href="https://www.linkedin.com/in/manuelzamalloa/" target="_blank"
           ><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"
         /></a>
-        <a href="https://x.com/Zamza584" target="_blank"
-          ><img src="images/twitter-x.svg" alt="X" width="16" height="16"
-        /></a>
       </div>
-      <p>Copyright symbol and current year</p>
-      <p>last modified</p>
+      <p>
+        &copy; <span id="currentyear"></span> &bull; Manuel Zamalloa &bull;
+        Callao, Peru
+      </p>
+      <p>Last Modification: <span id="lastmodified"></span></p>
     </footer>
   </body>
 </html>
