@@ -12,6 +12,7 @@
   .hamburger {
     display: none;
   }
+
   .navigation {
     display: block;
     border-bottom: solid 1px #eee;
@@ -22,5 +23,14 @@
   }
   .navigation a {
     border: none;
+  }
+  
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .courses {
+    grid-column: 1 / 3;
   }
 }
