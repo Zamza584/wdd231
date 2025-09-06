@@ -7,6 +7,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/larger.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <!-- Scripts -->
@@ -30,7 +31,11 @@
     <header>
       <img src="images/logo.svg" alt="site logo" width="40px" height="40px" />
       <span>Manuel Zamalloa</span>
-      <button id="ham-btn" class="hamburger"></button>
+      <button
+        aria-label="hamburger button"
+        id="ham-btn"
+        class="hamburger"
+      ></button>
     </header>
     <nav id="nav-bar" class="navigation">
       <ul>
@@ -44,34 +49,38 @@
       <section class="about-me">
         <h2>About Me</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-          consequatur commodi deleniti maxime esse deserunt. Dolorum, asperiores
-          exercitationem? Est iste, quisquam iure numquam aliquid illum libero
-          harum ad suscipit rem! In tempore, exercitationem modi vel, culpa
-          officiis inventore quo voluptatibus sit maxime cum fugiat suscipit
-          qui? Obcaecati quidem assumenda nam quaerat dolore eos ipsam, veniam
-          ex eligendi nemo sit velit tempora explicabo autem non, blanditiis
-          ipsa doloremque quasi omnis, itaque atque ab aut earum optio? Nam quia
-          neque totam consequuntur!
+          Hello everyone! My name is Manuel Zamalloa, I am from Peru. I am
+          currently a student in BYU Idaho Online via pathway. I find it fun to
+          learn new things and then share them if they are interesting or funny.
+          I like reading books and improving myself as a person, I feel it
+          necessary to constantly do it. One of the things I am passionate about
+          as well is music. I love listening to music that inspires me or helps
+          me reflect on life or situtations.
+        </p>
+        <p>
+          Something interesting about me is that I have to constantly take care
+          of my health because I have gastritis. But I love it!.. well taking
+          care of my health. I think eating healthy is so cool. There is much
+          good foods to make with simple ingredients. And of course there are
+          many foods that I can not eat, but that is ok.
         </p>
       </section>
       <section class="student-photo">
         <h2>Student Photo</h2>
-        <img src="#" alt="my photo" />
+        <img src="images/me.webp" alt="my photo" />
       </section>
       <section class="courses">
         <h2>Web Certificate Courses</h2>
         <div class="courses__buttons">
-          <button>All</button>
-          <button>CSE</button>
-          <button>WDD</button>
+          <button aria-label="All Courses" id="all">All</button>
+          <button aria-label="CSE Courses" id="cse">CSE</button>
+          <button aria-label="WDD Courses" id="wdd">WDD</button>
         </div>
-        <div class="courses__sections">
-          <p>WDD 130</p>
-          <p>WDD 131</p>
-          <p>WDD 231</p>
-        </div>
-        <p>The total credits for course listed above is 6</p>
+        <div id="courses" class="courses__sections"></div>
+        <p>
+          The total credits for course listed above is
+          <span id="credits"></span>
+        </p>
       </section>
     </main>
     <footer class="footer">

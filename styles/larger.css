@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 700px) {
   header,
   main,
   nav,
@@ -9,6 +9,7 @@
   header {
     grid-template-columns: 24px auto;
   }
+
   .hamburger {
     display: none;
   }
@@ -21,13 +22,21 @@
   .navigation ul {
     display: flex;
   }
+
   .navigation a {
     border: none;
   }
-  
+
   .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .student-photo img {
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center top; /*got help from ai*/
   }
 
   .courses {
