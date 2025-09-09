@@ -1,0 +1,25 @@
+{
+  "family_name": "Santiago",
+  "moved_in_date": "09/01/2022",
+  "number_of_people": 3,
+  "visited_bishopric": false,
+  "family_members": [
+    {
+      "name": "John",
+      "gender": "male",
+      "birthdate": "12/08/1997"
+    },
+
+    {
+      "name": "Jake",
+      "gender": "male",
+      "birthdate": "12/04/1997"
+    },
+
+    {
+      "name": "Peter",
+      "gender": "male",
+      "birthdate": "12/09/1997"
+    }
+  ]
+}
