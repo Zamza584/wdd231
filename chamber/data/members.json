@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Valdosta Mall",
+      "address": "1700 Norman Dr, Valdosta, GA 31601, United States",
+      "phone_number": "+1 229-242-0457",
+      "website_url": "https://www.visitvaldosta.org",
+      "logo_url": "images/logos/valdosta-mall.svg",
+      "membership_level": 2
+    },
+    {
+      "name": "Texaco",
+      "address": "18060 SAN RAMON VLY BLVD, SAN RAMON, CA 94583-4405",
+      "phone_number": "(925) 328-0292",
+      "website_url": "https://es.texacolubricants.com/",
+      "logo_url": "images/logos/texaco.svg",
+      "membership_level": 3
+    },
+    {
+      "name": "Terra Mall",
+      "address": "Cartago, Costa Rica Autopista Florencio Del Castillo, San Diego",
+      "phone_number": "+506 2278-6842",
+      "website_url": "https://www.terramall.co.cr/",
+      "logo_url": "images/logos/terra-mall.svg",
+      "membership_level": 1
+    },
+    {
+      "name": "Philip Morrix International",
+      "address": "One Apple Park Way Cupertino, CA 95014",
+      "phone_number": "1234567489",
+      "website_url": "example.com",
+      "logo_url": "images/logos/",
+      "membership_level": 3
+    },
+    {
+      "name": "Apple",
+      "address": "One Apple Park Way Cupertino, CA 95014",
+      "phone_number": "1234567489",
+      "website_url": "example.com",
+      "logo_url": "images/logos/",
+      "membership_level": 3
+    },
+    {
+      "name": "Apple",
+      "address": "One Apple Park Way Cupertino, CA 95014",
+      "phone_number": "1234567489",
+      "website_url": "example.com",
+      "logo_url": "images/logos/",
+      "membership_level": 3
+    },
+    {
+      "name": "Apple",
+      "address": "One Apple Park Way Cupertino, CA 95014",
+      "phone_number": "1234567489",
+      "website_url": "example.com",
+      "logo_url": "images/logos/",
+      "membership_level": 3
+    }
+  ]
+}

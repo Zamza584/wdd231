@@ -7,7 +7,10 @@
     <title>Chamber Project</title>
     <meta name="description" content="Chamber Project">
     <meta name="author" content="Manuel Zamalloa">
+
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
     <!-- favicon -->
     <meta property="og:title" content="Manuel Zamalloa Chamber Page">
@@ -21,42 +24,61 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
+
+    <script src="scripts/members.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <img src="#" alt="chamber logo">
-        <span>Chamber of Commerce</span>
-        <img src="images/hamburger.svg" width="40" height="40" aria-label="hamburger button" id="ham-btn"
-            class="hamburger">
+    <header class="header">
+        <div class="wrapper">
+            <div class="title">
+                <img src="#" alt="chamber logo">
+                <span>Chamber of Commerce</span>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <img src="images/hamburger.svg" width="40" height="40" aria-label="hamburger button" id="ham-btn"
+                class="hamburger">
+        </div>
     </header>
-    <nav class="navigation">
-        <ul>
-            <li class="current"><a href="/">Home</a></li>
-            <li><a href="#">Directory</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-    </nav>
+
     <main>
+        <h1>Members</h1>
         <div class="member-cards" id="member-cards">
         </div>
 
     </main>
-    <footer>
-        <div class="social">
-            <a href="https://www.facebook.com/manuel.zamalloa.96" target="_blank"><img src="images/facebook.svg"
-                    alt="facebook" width="16" height="16" /></a>
-            <a href="https://github.com/Zamza584" target="_blank"><img src="images/github.svg" alt="icongithub"
-                    width="16" height="16" /></a>
-            <a href="https://www.linkedin.com/in/manuelzamalloa/" target="_blank"><img src="images/linkedin.svg"
-                    alt="linkedin" width="16" height="16" /></a>
+    <footer class="footer">
+        <div class="wrapper">
+            <div>
+                <p>CDLL Chamber of Commerce</p>
+                <p>22 fe and love </p>
+                <p>Carmen de la Legua, Callao 07006</p>
+                <p>CDLL@ourgmail.com</p>
+                <p>(111) 222 3333</p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/manuel.zamalloa.96" target="_blank"><img src="images/facebook.svg"
+                        alt="facebook" width="16" height="16" /></a>
+                <a href="https://github.com/Zamza584" target="_blank"><img src="images/github.svg" alt="icongithub"
+                        width="16" height="16" /></a>
+                <a href="https://www.linkedin.com/in/manuelzamalloa/" target="_blank"><img src="images/linkedin.svg"
+                        alt="linkedin" width="16" height="16" /></a>
+            </div>
+            <div>
+                <p>
+                    &copy; <span id="currentyear"></span> &bull; Manuel Zamalloa &bull; WDD231 &bull;
+                    Callao, Peru
+                </p>
+                <p>Last Modification: <span id="lastmodified"></span></p>
+            </div>
         </div>
-        <p>
-            &copy; <span id="currentyear"></span> &bull; Manuel Zamalloa &bull; WDD231 &bull;
-            Callao, Peru
-        </p>
-        <p>Last Modification: <span id="lastmodified"></span></p>
     </footer>
 </body>
 

@@ -1,3 +1,141 @@
+:root {
+  --primary-color: #212a31;
+  --secondary-color: #2e3944;
+  --accent-color-1: #124e66;
+  --accent-color-2: #748d92;
+  --accent-color-3: #d3d9d4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: "DM Sans", sans-serif;
+  margin: auto;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/*** header ***/
+header {
+  background-color: var(--primary-color);
+}
+
+header .wrapper {
+  grid-template-columns: auto auto;
+  display: grid;
+  align-items: end;
+  border-bottom: solid 1px var(--accent-color-2);
+  column-gap: 8px;
+  max-width: 1000px;
+  margin: auto;
+  color: var(--accent-color-3);
+  padding: 1.5rem 0;
+}
+
+.title {
+  width: fit-content;
+}
+
+.hamburger {
+  width: 50px;
+  margin: 1rem 0.7rem 1.2rem 0;
+  cursor: pointer;
+}
+
+/* navigation */
+.navigation {
+  width: fit-content;
+  display: none;
+  justify-self: end;
+}
+
+.navigation a:hover {
+  color: var(--accent-color-2);
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom: solid 1px #ddd;
+}
+
+/******** main ********/
+.member-cards {
+  padding: 4rem 0;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.member-card {
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px var(--primary-color);
+}
+.member-card img {
+  display: block;
+  margin: 3rem auto;
+}
+
+/******** footer ********/
+
+.footer {
+  background-color: var(--primary-color);
+  padding: 1.5rem 0;
+}
+
+.footer .wrapper {
+  padding: 1rem 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer p {
+  color: var(--accent-color-3);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  margin: 1rem 0;
+}
+
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border: #ccc solid 1px;
+  border-radius: 4px;
+}
+
+.social img {
+  width: 22px;
+  height: 22px;
+}
+
+.social a:hover {
+  background-color: var(--secondary-color);
 }

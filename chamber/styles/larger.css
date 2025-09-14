@@ -1,0 +1,22 @@
+@import url("base.css");
+
+@media only screen and (min-width: 700px) {
+  .hamburger {
+    display: none;
+  }
+
+  /* navigation  */
+  .navigation {
+    display: block;
+  }
+
+  .navigation ul {
+    display: flex;
+  }
+
+  .navigation a {
+    border: none;
+
+    color: var(--accent-color-3);
+  }
+}
