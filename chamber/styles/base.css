@@ -64,38 +64,25 @@ header .wrapper {
   justify-self: end;
 }
 
-.navigation a:hover {
-  color: var(--accent-color-2);
-}
-
 .navigation.show {
+  position: absolute;
   display: block;
-}
-
-.navigation ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  background-color: var(--primary-color);
+  left: 0;
+  top: 80px;
+  width: 100%;
 }
 
 .navigation a {
   display: block;
   padding: 0.5rem 1rem;
-  color: var(--primary-color);
   text-decoration: none;
   border-bottom: solid 1px #ddd;
-}
-
-.navigation.show {
-  display: block;
-  position: absolute;
-  background-color: var(--primary-color);
-  left: 0;
-  top: 0;
-}
-
-.show a {
   color: var(--accent-color-3);
+}
+
+.navigation a:hover {
+  color: var(--accent-color-2);
 }
 
 /******** main ********/
