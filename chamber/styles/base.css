@@ -57,6 +57,11 @@ header .wrapper {
   cursor: pointer;
 }
 
+.logo {
+  width: 100%;
+  max-width: 130px;
+}
+
 /* navigation */
 .navigation {
   width: fit-content;
