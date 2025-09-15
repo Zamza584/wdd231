@@ -16,9 +16,19 @@ body {
   margin: auto;
 }
 
+h1 {
+  margin: 2rem 0 0 0;
+}
+
 main {
   max-width: 1000px;
   margin: auto;
+}
+
+header,
+main,
+footer {
+  padding: 0 1rem;
 }
 
 /*** header ***/
@@ -27,7 +37,7 @@ header {
 }
 
 header .wrapper {
-  grid-template-columns: auto auto;
+  grid-template-columns: auto 60px;
   display: grid;
   align-items: end;
   border-bottom: solid 1px var(--accent-color-2);
@@ -44,7 +54,6 @@ header .wrapper {
 
 .hamburger {
   width: 50px;
-  margin: 1rem 0.7rem 1.2rem 0;
   cursor: pointer;
 }
 
@@ -77,12 +86,37 @@ header .wrapper {
   border-bottom: solid 1px #ddd;
 }
 
+.navigation.show {
+  display: block;
+  position: absolute;
+  background-color: var(--primary-color);
+  left: 0;
+  top: 0;
+}
+
+.show a {
+  color: var(--accent-color-3);
+}
+
 /******** main ********/
+.btn {
+  width: 100px;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1rem;
+  border: none;
+  background: var(--primary-color);
+  color: var(--accent-color-3);
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+}
+
 .member-cards {
-  padding: 4rem 0;
+  padding: 2rem 0;
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .member-card {
@@ -93,6 +127,35 @@ header .wrapper {
 .member-card img {
   display: block;
   margin: 3rem auto;
+}
+
+.grid {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.list {
+  grid-template-columns: none;
+  gap: 0;
+}
+.list .member-card {
+  border-radius: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.5fr 40px;
+  box-shadow: none;
+}
+
+.list .member-card:nth-child(odd) {
+  background-color: var(--accent-color-3);
+}
+.list .member-card p {
+  padding-right: 1rem;
+}
+.list img {
+  display: none;
+}
+.list a {
+  display: block;
+  padding-right: 1rem;
 }
 
 /******** footer ********/

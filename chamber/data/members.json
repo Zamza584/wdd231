@@ -25,35 +25,35 @@
       "membership_level": 1
     },
     {
-      "name": "Philip Morrix International",
-      "address": "One Apple Park Way Cupertino, CA 95014",
-      "phone_number": "1234567489",
-      "website_url": "example.com",
-      "logo_url": "images/logos/",
+      "name": "Metro PCs",
+      "address": "BO MONTELLANO CARR 1 KM 56.2, CAYEY, PR 00736",
+      "phone_number": "1-844-254-9548",
+      "website_url": "https://www.metrobyt-mobile.com/",
+      "logo_url": "images/logos/metropcs-logo.svg",
+      "membership_level": 2
+    },
+    {
+      "name": "Golf Magazine",
+      "address": "6 E 43rd St ; New York, NY 10017-4609",
+      "phone_number": "(212) 522-1212",
+      "website_url": "https://golf.com/",
+      "logo_url": "images/logos/golf-magazine-1.svg",
       "membership_level": 3
     },
     {
-      "name": "Apple",
-      "address": "One Apple Park Way Cupertino, CA 95014",
-      "phone_number": "1234567489",
-      "website_url": "example.com",
-      "logo_url": "images/logos/",
-      "membership_level": 3
+      "name": "Fortune Magazine",
+      "address": "40 Fulton Street, New York, NY 10038, US",
+      "phone_number": "1-800-621-8000",
+      "website_url": "https://fortune.com/",
+      "logo_url": "images/logos/fortune-magazine.svg",
+      "membership_level": 2
     },
     {
-      "name": "Apple",
-      "address": "One Apple Park Way Cupertino, CA 95014",
-      "phone_number": "1234567489",
-      "website_url": "example.com",
-      "logo_url": "images/logos/",
-      "membership_level": 3
-    },
-    {
-      "name": "Apple",
-      "address": "One Apple Park Way Cupertino, CA 95014",
-      "phone_number": "1234567489",
-      "website_url": "example.com",
-      "logo_url": "images/logos/",
+      "name": "Food to Love",
+      "address": "made up address 22",
+      "phone_number": "222 222 2222",
+      "website_url": "foodtolove.co.nz",
+      "logo_url": "images/logos/food-to-love.svg",
       "membership_level": 3
     }
   ]

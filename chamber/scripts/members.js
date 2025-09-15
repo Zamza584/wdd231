@@ -46,3 +46,4 @@ function displayMemberCards(membersList) {
     memberCards.appendChild(memberCard);
   });
 }
+
