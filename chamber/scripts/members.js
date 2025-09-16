@@ -32,7 +32,7 @@ function displayMemberCards(membersList) {
     phoneNumber.innerHTML = `${member.phone_number}`;
     websiteUrl.innerHTML = `${member.website_url}`;
     websiteUrl.setAttribute("href", member.website_url);
-    memberShipLevel.innerHTML = `${member.membership_level}`;
+    memberShipLevel.innerHTML = `Membership level: ${member.membership_level}`;
 
     memberCard.appendChild(logo);
     memberCard.appendChild(companyName);
@@ -46,4 +46,3 @@ function displayMemberCards(membersList) {
     memberCards.appendChild(memberCard);
   });
 }
-
