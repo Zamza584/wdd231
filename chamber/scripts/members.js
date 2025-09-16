@@ -27,6 +27,8 @@ function displayMemberCards(membersList) {
     logo.setAttribute("src", member.logo_url);
     logo.setAttribute("width", 100);
     logo.setAttribute("height", 100);
+    logo.setAttribute("alt", `${member.name} logo`);
+
     companyName.innerHTML = `<strong>${member.name}</strong>`;
     address.innerHTML = `${member.address}`;
     phoneNumber.innerHTML = `${member.phone_number}`;
