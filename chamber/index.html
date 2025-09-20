@@ -8,19 +8,20 @@
     <meta name="description" content="Chamber Project">
     <meta name="author" content="Manuel Zamalloa">
 
-    <!-- styles -->
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-larger.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
 
     <!-- favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-    <!-- social media : meta  -->
+    <!-- social media  -->
     <meta property="og:title" content="Manuel Zamalloa Chamber Page">
     <meta property="og:description" content="Chamber website ">
     <meta property="og:image" content="https://Zamza584.github.io/wdd231/chamber/images/logos/logo.png">
-    <meta property="og:url" content="https://zamza584.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://Zamza584.github.io/wdd231/chamber/">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,9 +32,9 @@
 
     <!-- scripts -->
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/members.js" defer></script>
-    <script src="scripts/grid.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/spotlightMembers.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 
 </head>
 
@@ -46,8 +47,8 @@
             </div>
             <nav id="nav-bar" class="navigation">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="current"><a href="#">Directory</a></li>
+                    <li class="current"><a href="/">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="#">Join</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
@@ -58,13 +59,46 @@
     </header>
 
     <main>
-        <h1>Members</h1>
-        <div class="options">
-            <button class="btn" id="grid">Grid</button>
-            <button class="btn" id="list">List</button>
+        <div class="hero">
+            <h1>Carmen de la Legua - Chamber of Commerce</h1>
+            <img src="images/hero.webp" alt="hero image">
+            <button class="btn hero-btn">Sign Up Now</button>
+            <a
+                href="https://commons.wikimedia.org/wiki/File:Carmen_de_la_Legua_Reynoso,_Peru_-_panoramio_(4).jpg">Yullinori</a>,
+            <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons
         </div>
-        <div class="member-cards grid" id="member-cards">
+        <div class="current-events">
+            <h1>Current Events</h1>
+            <div class="event">
+                <h2>Weekly Gathering</h2>
+                <p>Day:Monday Time:11:00pm</p>
+                <p>Location: Nogales 1, carmen de la legua</p>
+            </div>
+            <div class="event">
+                <h2>Business Meeting</h2>
+                <p>Day:Thurday Time:11:00pm</p>
+                <p>Location: Nogales 1, carmen de la legua</p>
+            </div>
         </div>
+        <div class="weather">
+            <h1>Weather (Carmen de La Legua)</h1>
+            <p>Todays Weather</p>
+            <p>Temperature: <span id="current-weather"></span></p>
+            <p>Description: <span id="weather-description"></span></p>
+            <img id="weather-icon">
+
+            <h2>Weather Forecast</h2>
+            <div class="weather-forecast" id="weather-forecast">
+
+
+            </div>
+        </div>
+        <div class="company-highlight">
+            <h1>Company Highlights</h1>
+            <div class="member-cards grid" id="member-cards">
+            </div>
+        </div>
+
 
     </main>
     <footer class="footer">

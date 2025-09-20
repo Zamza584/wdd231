@@ -67,6 +67,7 @@ header .wrapper {
   width: fit-content;
   display: none;
   justify-self: end;
+  z-index: 3;
 }
 
 .navigation.show {
@@ -134,6 +135,7 @@ header .wrapper {
   grid-template-columns: none;
   gap: 0;
 }
+
 .list .member-card {
   border-radius: 0;
   display: grid;
@@ -144,12 +146,15 @@ header .wrapper {
 .list .member-card:nth-child(odd) {
   background-color: var(--accent-color-3);
 }
+
 .list .member-card p {
   padding-right: 1rem;
 }
+
 .list img {
   display: none;
 }
+
 .list a {
   display: block;
   padding-right: 1rem;
