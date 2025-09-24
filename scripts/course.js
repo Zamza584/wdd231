@@ -90,6 +90,8 @@ function displayCourses(coursesList) {
   displayCredits(coursesList);
   coursesList.forEach((course) => {
     const p = document.createElement("p");
+    p.setAttribute("class", "course");
+    p.setAttribute("id", `${course.subject}${course.number}`);
 
     // if completed add a styling to courses
     if (course.completed == true) {
@@ -99,6 +101,11 @@ function displayCourses(coursesList) {
     p.innerHTML = `${course.subject}${course.number}`;
 
     coursesTag.appendChild(p);
+
+    p.addEventListener("click", () => {
+      courseDetails.showModal();
+      displayCourse(course);
+    });
   });
 }
 
@@ -115,3 +122,46 @@ wddcourses.addEventListener("click", () => {
 allcourses.addEventListener("click", () => {
   displayCourses(courses);
 });
+
+// dialog details
+const courseDetails = document.querySelector("#course-details");
+const closeModal = document.querySelector("#close-modal");
+const courseList = document.querySelector(".course");
+
+courseDetails.addEventListener("click", (event) => {
+  if (event.target === courseDetails) {
+    courseDetails.close();
+  }
+});
+
+function displayCourse(course) {
+  courseDetails.innerHTML = "";
+  const h2 = document.createElement("h2");
+  const closeBtn = document.createElement("button");
+  const title = document.createElement("p");
+  const credits = document.createElement("p");
+  const description = document.createElement("p");
+  const certificate = document.createElement("p");
+  const techStack = document.createElement("p");
+
+  h2.innerHTML = `${course.subject} ${course.number}`;
+  title.innerHTML = `${course.title} `;
+  credits.innerHTML = `Course Credits: ${course.credits}`;
+  description.innerHTML = `${course.description}`;
+  certificate.innerHTML = `Certificate: ${course.certificate}`;
+  techStack.innerHTML = `Technology Stack: ${course.technology}`;
+  closeBtn.classList.add("close-modal");
+  closeBtn.setAttribute("id", "close-modal");
+
+  courseDetails.appendChild(h2);
+  courseDetails.appendChild(closeBtn);
+  courseDetails.appendChild(title);
+  courseDetails.appendChild(credits);
+  courseDetails.appendChild(description);
+  courseDetails.appendChild(certificate);
+  courseDetails.appendChild(techStack);
+
+  closeBtn.addEventListener("click", () => {
+    courseDetails.close();
+  });
+}

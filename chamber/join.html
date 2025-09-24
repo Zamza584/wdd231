@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDLL Chamber of Commerce</title>
+    <meta name="description" content="Chamber Project">
+    <meta name="author" content="Manuel Zamalloa">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- social media  -->
+    <meta property="og:title" content="Manuel Zamalloa Chamber Page">
+    <meta property="og:description" content="Chamber website ">
+    <meta property="og:image" content="https://Zamza584.github.io/wdd231/chamber/images/logos/logo.png">
+    <meta property="og:url" content="https://Zamza584.github.io/wdd231/chamber/">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="title">
+                <img class="logo" src="images/logo.png" width="130" alt="chamber logo">
+                <span>Chamber of Commerce</span>
+            </div>
+            <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li class="current"><a href="/">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <img src="images/hamburger.svg" width="40" height="40" id="ham-btn" alt="hamburger button"
+                class="hamburger">
+        </div>
+    </header>
+    <main>
+        <form action="GET" action="confirmation.html">
+            <label>First Name <input type="text" name="first" title="first name" autocomplete="first name"
+                    required></label>
+            <label>Last Name<input type="text" name="last" title="last name" autocomplete="last name" required></label>
+            <label>Organizational Title<input type="text" name="organization Title" title="organization title"
+                    autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" required></label>
+            <!-- got a little help from google ai to get the right pattern -->
+
+            <label>Email Address<input type="email" name="email address" title="email address"
+                    autocomplete="email address" placeholder="ex: emailname@email.com" required></label>
+            <label>Phone number<input type="tel" name="phone number" title="phone number" autocomplete="phone number"
+                    required></label>
+            <input type="submit">
+            <label>Business/Organization name<input type="text" name="business name" title="business name"
+                    autocomplete="organization" required></label>
+
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div>
+                <p>CDLL Chamber of Commerce</p>
+                <p>22 fe and love </p>
+                <p>Carmen de la Legua, Callao 07006</p>
+                <p>CDLL@ourgmail.com</p>
+                <p>(111) 222 3333</p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/manuel.zamalloa.96" target="_blank"><img src="images/facebook.svg"
+                        alt="facebook" width="16" height="16"></a>
+                <a href="https://github.com/Zamza584" target="_blank"><img src="images/github.svg" alt="icongithub"
+                        width="16" height="16"></a>
+                <a href="https://www.linkedin.com/in/manuelzamalloa/" target="_blank"><img src="images/linkedin.svg"
+                        alt="linkedin" width="16" height="16"></a>
+            </div>
+            <div>
+                <p>
+                    &copy; <span id="currentyear"></span> &bull; Manuel Zamalloa &bull; WDD231 &bull;
+                    Callao, Peru
+                </p>
+                <p>Last Modification: <span id="lastmodified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -177,6 +177,46 @@ header span {
   text-align: center;
 }
 
+dialog {
+  border: none;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  border: #05260b;
+  background-color: var(--accent-color-3);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+::backdrop {
+  background-color: rgba(80, 127, 184, 0.554);
+}
+
+dialog h2 {
+  width: 100%;
+  height: fit-content;
+}
+
+.close-modal::before {
+  content: "X";
+}
+
+dialog button {
+  position: absolute;
+  height: fit-content;
+  padding: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  right: 20px;
+  top: 10px;
+  font-weight: 900;
+}
+
+dialog > p {
+  margin-right: auto;
+}
+
 /* Footer Section */
 
 .footer {
