@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-larger.css">
 
     <!-- favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -31,6 +33,7 @@
     <!-- scripts -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/dialog.js" defer></script>
 
 </head>
 
@@ -45,7 +48,7 @@
                 <ul>
                     <li class="current"><a href="/">Home</a></li>
                     <li><a href="directory.html">Directory</a></li>
-                    <li><a href="#">Join</a></li>
+                    <li><a href="join.html">Join</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
             </nav>
@@ -54,7 +57,8 @@
         </div>
     </header>
     <main>
-        <form action="GET" action="confirmation.html">
+        <form method="GET" action="thankyou.html">
+            <h1>Join Chamber Membership</h1>
             <label>First Name <input type="text" name="first" title="first name" autocomplete="first name"
                     required></label>
             <label>Last Name<input type="text" name="last" title="last name" autocomplete="last name" required></label>
@@ -66,11 +70,31 @@
                     autocomplete="email address" placeholder="ex: emailname@email.com" required></label>
             <label>Phone number<input type="tel" name="phone number" title="phone number" autocomplete="phone number"
                     required></label>
-            <input type="submit">
             <label>Business/Organization name<input type="text" name="business name" title="business name"
                     autocomplete="organization" required></label>
 
+            <div class="membership">
+                <h2>Membership Level</h2>
+                <label><input type="radio" name="membership" value="np-membership">NP membership</label>
+                <label><input type="radio" name="membership" value="np-membership">Bronze membership</label>
+                <label><input type="radio" name="membership" value="np-membership">Silver membership</label>
+                <label><input type="radio" name="membership" value="np-membership">Gold membership</label>
+            </div>
+
+            <label>Business/Organization description<textarea name="description" title="organization description"
+                    required> </textarea>
+            </label>
+            <span hidden="hidden" name="timestamp" id="timestamp">
+                current date, time loaded
+            </span>
+            <input class="btn" type="submit" value="Join Now">
         </form>
+        <div class="member-cards" id="member-cards">
+            <h1>Membership Levels</h1>
+        </div>
+        <dialog id="member-modal">
+        </dialog>
+
     </main>
     <footer class="footer">
         <div class="wrapper">

@@ -8,19 +8,20 @@
     <meta name="description" content="Chamber Project">
     <meta name="author" content="Manuel Zamalloa">
 
-    <!-- styles -->
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+
 
     <!-- favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-    <!-- social media : meta  -->
+    <!-- social media  -->
     <meta property="og:title" content="Manuel Zamalloa Chamber Page">
     <meta property="og:description" content="Chamber website ">
     <meta property="og:image" content="https://Zamza584.github.io/wdd231/chamber/images/logos/logo.png">
-    <meta property="og:url" content="https://zamza584.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://Zamza584.github.io/wdd231/chamber/">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,9 +32,9 @@
 
     <!-- scripts -->
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/members.js" defer></script>
-    <script src="scripts/grid.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/dialog.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 
 </head>
 
@@ -46,8 +47,8 @@
             </div>
             <nav id="nav-bar" class="navigation">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="current"><a href="directory.html">Directory</a></li>
+                    <li class="current"><a href="/">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
@@ -56,16 +57,10 @@
                 class="hamburger">
         </div>
     </header>
-
     <main>
-        <h1>Members</h1>
-        <div class="options">
-            <button class="btn" id="grid">Grid</button>
-            <button class="btn" id="list">List</button>
-        </div>
-        <div class="member-cards grid" id="member-cards">
-        </div>
-
+        <h1>Thank you!</h1>
+        <p>We are happy that you could join us! hope we can make our district a better place.</p>
+        <div id="results" class="member-card"></div>
     </main>
     <footer class="footer">
         <div class="wrapper">
