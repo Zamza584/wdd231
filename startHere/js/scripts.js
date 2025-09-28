@@ -7,5 +7,4 @@ document.querySelector("#results").innerHTML = `
 )} in the ${myInfo.get("location")} </p>
     <p>Your phone: ${myInfo.get("phone")}</p>
     <p>Your email is ${myInfo.get("email")}</p>
-
 `;
