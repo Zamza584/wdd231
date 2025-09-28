@@ -67,9 +67,9 @@
                     autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" required></label>
             <!-- got a little help from google ai to get the right pattern -->
 
-            <label>Email Address<input type="email" name="email address" title="email address"
-                    autocomplete="email-address" placeholder="ex: emailname@email.com" required></label>
-            <label>Phone number<input type="tel" name="phone number" title="phone number" autocomplete="phone-number"
+            <label>Email Address<input type="email" name="email address" title="email address" autocomplete="email"
+                    placeholder="ex: emailname@email.com" required></label>
+            <label>Phone number<input type="tel" name="phone number" title="phone number" autocomplete="tel"
                     required></label>
             <label>Business/Organization name<input type="text" name="business name" title="business name"
                     autocomplete="organization" required></label>
@@ -85,7 +85,7 @@
             <label>Business/Organization description<textarea name="description" title="organization description"
                     required> </textarea>
             </label>
-            <span hidden="hidden" name="timestamp" id="timestamp">
+            <span hidden="hidden" id="timestamp">
                 current date, time loaded
             </span>
             <input class="btn" type="submit" value="Join Now">
