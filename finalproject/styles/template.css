@@ -1,0 +1,43 @@
+:root {
+  --primary-color: #f2dcd3;
+  --secondary-color: #e7bdb3;
+  --accent-color-1: #3b3638;
+  --accent-color-2: #f9f7f7;
+  --accent-color-3: #c9a4a0;
+}
+
+* {
+  font-family: "Petit Formal Script", cursive;
+}
+
+h1 {
+  font-family: "Petit Formal Script", cursive;
+  font-size: 25px;
+}
+
+li,
+p {
+  font-family: "IBM Plex Sans";
+}
+
+.square {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+
+.accent1 {
+  background-color: var(--accent-color-1);
+}
+.accent2 {
+  background-color: var(--accent-color-2);
+}
+.accent3 {
+  background-color: var(--accent-color-3);
+}
