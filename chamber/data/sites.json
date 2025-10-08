@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Virgen del Carmen de la Legua",
+    "address": "Av. Morales Duárez 184, Carmen de La Legua - Reynoso 07006",
+    "description": "A cherished symbol of faith and identity in Callao. This historic sanctuary honors the Virgin of Carmen, patroness of the city, whose devotion dates back over 400 years. Visitors can admire the grand statue near the entrance to Callao and experience the vibrant July  festivities that fill the streets with color, music, and devotion.",
+    "url": "images/sites/carmenvirgen.webp"
+  },
+  {
+    "name": "Carmen de la Legua Reynoso Market",
+    "address": "Independencia 576, Carmen de La Legua - Reynoso 07006",
+    "description": "This lively traditional market offers a wide variety of fresh products — fruits, vegetables, meats, fish, poultry, and groceries — along with clothing and household items. Open from early morning until late afternoon, it’s known for its affordable prices and authentic local atmosphere, giving visitors a true taste of everyday life in Callao.",
+    "url": "images/sites/cmdll-market.webp"
+  },
+  {
+    "name": "Good Year store",
+    "address": "Av. Argentina 6236, Lima 07006",
+    "description": "Goodyear is one of Peru’s leading tire companies. With over 60 years of presence in South America, the store offers a full range of tires for cars, trucks, and specialty vehicles, backed by strong guarantees and technical support. Ideal for anyone looking for trusted automotive products and expert service.",
+    "url": "images/sites/goodyear.webp"
+  },
+  {
+    "name": "San Jose Hospital",
+    "address": "Magnolias 475, Carmen de La Legua - Reynoso 15103",
+    "description": "A major public hospital located in Carmen de la Legua-Reynoso, Callao. It is a Nivel II-2 establishment under the Regional Government of Callao, offering a wide range of medical specialties, 24-hour emergency services, and hospitalization.",
+    "url": "images/sites/hospitalsanjose.webp"
+  },
+  {
+    "name": "Plaza Miguel Grau",
+    "address": "Av. 1 de Mayo 830, Carmen de La Legua - Reynoso 07006",
+    "description": "A historic and iconic square located in the heart of Callao. Home to a monument honoring Admiral Miguel Grau Seminario, Peru’s national hero, the plaza sits beside the Paseo de las Anclas, Muelle de Guerra, and the Naval Museum. Recently renovated, it features improved landscaping, colonial-style lighting, and inviting public spaces. A must-visit for its views, maritime atmosphere, and cultural importance.",
+    "url": "images/sites/parquegrau.webp"
+  },
+  {
+    "name": "Luna Park",
+    "address": "Huascar, Carmen de La Legua - Reynoso 07006",
+    "description": "A pleasant neighborhood green space in Carmen de La Legua-Reynoso, located near Hospital San José and the Bueno Bonito y Barato shopping center. It offers locals a peaceful spot for walking, relaxing, socializing, or enjoying outdoor time.",
+    "url": "images/sites/ParqueLuna.webp"
+  },
+  {
+    "name": "Sports Field",
+    "address": "Av. Elmer Faucett 644, Callao 07006",
+    "description": "A public sports court revitalized by the municipal government to promote healthier lifestyles and community unity. The space includes new fulbito (small-soccer) courts, strong lighting for evening use, and nearby facilities",
+    "url": "images/sites/sportpark.webp"
+  },
+  {
+    "name": "Betancourt Vet",
+    "address": "Av. José Santos Chocano 442, Carmen de La Legua - Reynoso 07006",
+    "description": "This trusted veterinary clinic provides comprehensive care for pets, including medical consultations, vaccinations, deworming, grooming, and sales of pet supplies. Known for its friendly service and experienced staff, Veterinaria Betancourt is a reliable choice for keeping your pets healthy and well cared for in the community.",
+    "url": "images/sites/vet.webp"
+  },
+  {
+    "name": "The Church of Jesus Christ of Latter-day Saints ",
+    "address": "Av. 1 de Mayo 1335-1339, Carmen de La Legua - Reynoso 07006",
+    "description": "The church offers regular Sunday worship services and gospel study sessions. It serves as a welcoming place of gathering for neighbors and families, providing a peaceful space for spiritual growth, community support, and faith-based activities",
+    "url": "images/sites/ldschurch.webp"
+  }
+]

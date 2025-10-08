@@ -1,0 +1,18 @@
+@media only screen and (min-width: 641px) {
+  main {
+    display: block;
+  }
+
+  .discover-card {
+    grid-template-areas:
+      "title title"
+      "image description"
+      "image address"
+      "button button";
+    width: 100%;
+  }
+
+  .btn {
+    grid-area: button;
+  }
+}

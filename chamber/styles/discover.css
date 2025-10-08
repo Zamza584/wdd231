@@ -1,0 +1,55 @@
+.discover-card {
+  border: 1px solid rgb(116, 141, 146, 0.5);
+  box-shadow: 2px 2px 5px rgb(116, 141, 146, 0.5);
+  border-radius: 1rem;
+  margin: 2rem auto;
+  overflow: hidden;
+  width: 300px;
+
+  display: grid;
+  grid-template-areas:
+    "image"
+    "title"
+    "description"
+    "address";
+}
+
+.discover-card h2 {
+  grid-area: title;
+}
+
+.discover-card figure {
+  grid-area: image;
+}
+
+.discover-card img {
+  display: block;
+  width: fit-content;
+  object-fit: cover;
+  margin: auto;
+}
+
+.discover-card .address {
+  grid-area: address;
+}
+
+.discover-card .description {
+  grid-area: description;
+}
+
+.discover-card h2,
+.discover-card p,
+address {
+  padding: 0.2rem 1rem;
+}
+
+.discover-card h2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.discover-card .btn {
+  width: 80%;
+  border-radius: 1rem;
+  margin: 1rem auto;
+}
