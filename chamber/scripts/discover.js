@@ -2,7 +2,7 @@ const discoverCards = document.querySelector("#discover-cards");
 
 const retrieveSite = async () => {
   try {
-    const response = await fetch("./data/sites.json");
+    const response = await fetch("./data/sites.json"); // note: I used chat gpt to get description for each of the locations
     const result = await response.json();
     result.forEach((item) => {
       createDiscoverCard(item);
@@ -26,6 +26,7 @@ function createDiscoverCard(site) {
   figure.appendChild(image);
 
   image.setAttribute("src", `${site.url}`);
+  image.setAttribute("alt", `${site.name}`);
   image.width = 300;
   image.height = 200;
   address.innerHTML = `${site.address}`;
