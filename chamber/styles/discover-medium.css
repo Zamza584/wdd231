@@ -12,6 +12,12 @@
     width: 100%;
   }
 
+  .discover-card:hover {
+    transform: scale(1.02);
+    z-index: 3;
+    transition: transform 0.2s;
+  }
+
   .btn {
     grid-area: button;
   }

@@ -46,23 +46,46 @@ function createDiscoverCard(site) {
 
 retrieveSite();
 
-//localstorage code
+//set current time when visited the site
 
-//current time
 const currentTime = new Date();
-localStorage.setItem("Time Visited", currentTime);
+
+function checkLastVisited(currentTime) {
+  const msToDays = 86400000;
+
+  const lastVisited = localStorage.getItem("date-last-visited");
+
+  if (lastVisited == null) {
+    localStorage.setItem("date-last-visited", currentTime.getTime());
+  }
+
+  const visited = new Date(parseInt(lastVisited));
+
+  const daysSinceLastVisit = (visited.getTime() - Date.now()) / msToDays;
+
+  if (daysSinceLastVisit.toFixed(0) < 1) {
+    document.querySelector("#user-message").innerHTML =
+      "Back so soon! Awesome!";
+  } else {
+    document.querySelector(
+      "#user-message"
+    ).innerHTML = `Your last visited ${daysSinceLastVisit.toFixed(0)} days ago`;
+  }
+}
+
+checkLastVisited(currentTime);
 
 //set time visted  --- got help from https://stackoverflow.com/questions/49304457/check-if-it-is-user-is-visiting-first-time-with-javascript#:~:text=function%20userfirstcheck(,%3D%22userfirstcheck
+
 let visited = localStorage.getItem("visited");
+
 if (visited == null) {
   localStorage.setItem("visited", 1);
   document.querySelector("#user-message").innerHTML =
-    "Welcome! to the discover page! ";
+    "Welcome! Let us know if you have any questions.";
   visited++;
   localStorage.setItem("visited", visited);
 } else {
-  document.querySelector("#user-message").innerHTML =
-    "We are glad to see you again! ";
   visited++;
   localStorage.setItem("visited", visited);
 }
