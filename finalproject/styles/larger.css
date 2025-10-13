@@ -1,0 +1,38 @@
+@media only screen and (min-width: 700px) {
+  /* navigation  */
+
+  .hamburger {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+  }
+
+  .navigation ul {
+    display: flex;
+  }
+
+  .navigation a {
+    border: none;
+    color: var(--accent-color-1);
+  }
+
+  .navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+  }
+
+  .navigation.show {
+    position: relative;
+    top: 0;
+    width: fit-content;
+  }
+}

@@ -18,7 +18,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join.css">
     <link rel="stylesheet" href="styles/larger.css">
+
 
     <!-- Scripts -->
 
@@ -51,28 +53,23 @@
                 class="hamburger">
         </div>
     </header>
+
     <main>
-        <div class="hero">
-            <h1>Fine Bakes</h1>
-            <button class="btn hero-btn"><a href="about.html">About Us</a></button>
-        </div>
-        <div class="about-us">
-            <h2>About Us</h2>
-            <img src="images/donuts.webp" alt="" width="600" height="400" loading="lazy">
-            <p>We are a community with the aim to help anyone share the recipes that they most love. We have many
-                meetings every week where we can share with each other new recipes and tips.</p>
-        </div>
-        <div class="meetings">
-            <h2>Meetings</h2>
-            <div class="meeting-card">
-                <h2>Enjoying bakes with friends</h2>
-                <p>Day:Monday Time:11:00pm</p>
-            </div>
-            <div class="meeting-card">
-                <h2>Delicous Moments</h2>
-                <p>Day:Thurday Time:11:00pm</p>
-            </div>
-        </div>
+        <form method="GET" action="thankyou.html">
+            <h1>Join our community to gain latest updates!</h1>
+            <label>First Name <input type="text" name="first" title="first name" autocomplete="given-name"
+                    required></label>
+            <label>Last Name<input type="text" name="last" title="last name" autocomplete="family-name"
+                    required></label>
+
+            <label>Email Address<input type="email" name="email address" title="email address" autocomplete="email"
+                    placeholder="ex: emailname@email.com" required></label>
+            <label>Phone number<input type="tel" name="phone number" title="phone number" autocomplete="tel"
+                    required></label>
+
+            <input class="submit-btn" type="submit" value="Stay up to date">
+        </form>
+
     </main>
     <footer class="footer">
         <div class="wrapper">
