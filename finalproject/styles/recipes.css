@@ -1,0 +1,33 @@
+main > h1,
+main > p {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.recipes-cards {
+  display: grid;
+  margin: auto;
+  justify-content: center;
+}
+
+.recipe-card {
+  display: grid;
+  grid-template-areas:
+    "image"
+    "description"
+    "author"
+    "time";
+
+  border-radius: 1rem;
+  box-shadow: 3px 3px 10px var(--accent-color-3);
+  max-width: 400px;
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+  
+}
+
+.recipe-card img {
+  grid-area: image;
+  width: 100%;
+  margin-bottom: 1rem;
+}

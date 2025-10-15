@@ -1,9 +1,51 @@
 [
   {
-    "name": "",
-    "short_description": "",
-    "url_img": "",
-    "author": "",
-    "prep_time": ""
+    "name": "Apple Pie",
+    "short_description": "Made with sliced apples perfect to share with family.",
+    "url_img": "images/recipes/apple-pie.webp",
+    "author": "James Troy",
+    "prep_time": 40
+  },
+  {
+    "name": "Blue Cupcake",
+    "short_description": "Playful cupcake made with blue frosting and pink candy pearls",
+    "url_img": "images/recipes/blue-cupcake.webp",
+    "author": "Lana Solis",
+    "prep_time": 30
+  },
+  {
+    "name": "Cheesecake",
+    "short_description": "Rich cheesecake covered with strawberry maramalade",
+    "url_img": "images/recipes/cheesecake.webp",
+    "author": "Jenny Frost",
+    "prep_time": 45
+  },
+  {
+    "name": "Chocolate Tart",
+    "short_description": "small chocolate tart sprinked with snow powder complemented witha a piece of strawberry",
+    "url_img": "images/recipes/chocolate-tart.webp",
+    "author": "Daisy Rose",
+    "prep_time": 40
+  },
+  {
+    "name": "Cinnamon Rolls",
+    "short_description": "fast and easy cinnamon roll with vanilla icing on top",
+    "url_img": "images/recipes/cinnamon-rolls.webp",
+    "author": "Sam Reed",
+    "prep_time": 20
+  },
+  {
+    "name": "Chocolate Cookies",
+    "short_description": "Home made cookies fast and easy to share with friends",
+    "url_img": "images/recipes/cookies.webp",
+    "author": "West Rich",
+    "prep_time": 35
+  },
+  {
+    "name": "Flan",
+    "short_description": "Delicious Flan to share with the whole family",
+    "url_img": "images/recipes/flan.webp",
+    "author": "Florence Gutierrez",
+    "prep_time": 50
   }
 ]
